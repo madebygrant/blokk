@@ -60,9 +60,3 @@ add_filter('blokk-editor-enqueued', function($enqueued){
     return $enqueued;
 
 });
-
-add_filter('blokk-custom-template-post-states', function() {
-    return [
-        'page-no-title' => 'This page does not display the page title'
-    ];
-});
