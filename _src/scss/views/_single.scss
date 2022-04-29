@@ -1,0 +1,9 @@
+.single{
+
+    .page-container--single{
+        > [class*="page-"] + [class*="page-"]{
+            margin-top: var(--wp--custom--spacing--medium);
+        }
+    }
+
+}

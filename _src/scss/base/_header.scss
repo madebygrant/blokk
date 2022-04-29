@@ -1,0 +1,22 @@
+.site-header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: var(--wp--custom--spacing--medium);
+
+    &__inner{
+        display: grid;
+        grid-template-columns: minmax(0, 250px) 1fr;
+        max-width: var(--wp--custom--width--content);
+        width: 100%;
+    }
+
+    .site-branding{
+        align-self: flex-end;
+    }
+
+    .site-navigation{
+        align-self: flex-end;
+    }
+}

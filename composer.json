@@ -1,0 +1,8 @@
+{
+  "name": "blokk/theme",
+  "type": "wordpress-theme",
+  "require": {
+    "php": ">=7.0",
+    "composer/installers": ">=1.0"
+  }
+}

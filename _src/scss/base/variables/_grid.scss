@@ -1,0 +1,9 @@
+body{
+    
+    // Grid
+    --grid-auto: repeat(auto-fit, minmax(250px, 1fr));
+    @for $i from 2 through 12 {
+        --grid-#{$i}: repeat(#{$i}, minmax(0, 1fr));
+    }
+    
+}

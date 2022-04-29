@@ -1,0 +1,21 @@
+%link-style-a{
+    --link: var(--wp--preset--color--black);
+    --hover: #777;
+    --active: #aaa;
+
+    text-decoration: none;
+}
+
+a{
+    @extend %link-style-a;
+
+    &:link, &:visited{
+        color: var(--link);
+    }
+    &:hover{
+        color: var(--hover);
+    }
+    &:active{
+        color: var(--active);
+    }
+}

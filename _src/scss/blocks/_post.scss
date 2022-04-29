@@ -1,0 +1,14 @@
+.wp-block-post{
+
+    .post__inner > * + *{
+        margin-top: var(--wp--custom--spacing--small);
+    }
+    
+    .wp-block-post-date{
+        margin-top: var(--wp--custom--spacing--small);
+    }
+
+    .taxonomy-post_tag{
+        font-style: italic;
+    }
+}

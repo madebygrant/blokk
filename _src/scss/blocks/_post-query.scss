@@ -1,0 +1,5 @@
+.wp-block-query.post-query > ul{
+    display: grid;
+    gap: var(--wp--custom--spacing--medium);
+    grid-template-columns: var(--grid-auto);
+}

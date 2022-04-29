@@ -1,0 +1,73 @@
+.wp-block-navigation{
+
+    --lvl-1-bg: transparent;
+    --lvl-1-bg-hover: transparent;
+    --lvl-1-bg-active: transparent;
+    --lvl-1-color: var(--wp--preset--color--black);
+
+    --lvl-2-bg: #eee;
+    --lvl-2-bg-hover: #ddd;
+    --lvl-2-bg-active: #ccc;
+    --lvl-2-color: var(--wp--preset--color--black);
+
+    --lvl-3-bg: #666;
+    --lvl-3-bg-hover: #555;
+    --lvl-3-bg-active: #444;
+    --lvl-3-color: #fff;
+
+    // Standardise the list items in the navigation
+    li{
+        background-color: var(--bg);
+        
+        &:hover{
+            background-color: var(--bg-hover);
+        }
+        &:active{
+            background-color: var(--bg-active);
+        }
+
+        > a, a > span{
+            color: inherit;
+        }
+
+    }
+    
+    // Navigation container
+    &__container{
+        --navigation-layout-wrap: nowrap;
+        align-items: flex-end;
+
+        // Level 1
+        > li {
+            --bg: var(--lvl-1-bg);
+            --bg-hover: var(--lvl-1-bg-hover);
+            --bg-active: var(--lvl-1-bg-active);
+
+            color: var(--lvl-1-color);
+
+            // Level 2
+            > ul > li{
+                --bg: var(--lvl-2-bg);
+                --bg-hover: var(--lvl-2-bg-hover);
+                --bg-active: var(--lvl-2-bg-active);
+
+               color: var(--lvl-2-color);
+
+                // Level 3
+                > ul > li{
+                    --bg: var(--lvl-3-bg);
+                    --bg-hover: var(--lvl-3-bg-hover);
+                    --bg-active: var(--lvl-3-bg-active);
+
+                    color: var(--lvl-3-color);
+                }
+            }
+        }
+    }
+
+    // Submenu container
+    &__submenu-container{
+        border: none !important;
+    }
+
+}

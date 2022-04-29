@@ -1,0 +1,5 @@
+.entry-content{
+    & > * + * {
+        margin-top: var(--wp--custom--spacing--small);
+    }
+}

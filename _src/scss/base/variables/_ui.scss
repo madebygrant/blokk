@@ -1,0 +1,13 @@
+:root{
+    
+    // Easing (based on Material Design guidelines)
+    --easing-standard: cubic-bezier(0.4, 0.0, 0.2, 1);
+    --easing-accelerate: cubic-bezier(0.4, 0.0, 1, 1);
+    --easing-decrease: cubic-bezier(0.0, 0.0, 0.2, 1);
+
+    // Transitions
+    --transition-slow: all .75s var(--easing-standard);
+    --transition: all .3s var(--easing-standard);
+    --transition-fast: all .15s var(--easing-standard);
+    
+}
